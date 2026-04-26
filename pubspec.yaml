@@ -1,0 +1,58 @@
+name: fixmystreet
+description: "FixMyStreet – Community Issue Reporting System"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <5.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: any
+  firebase_auth: any
+  cloud_firestore: any
+  firebase_storage: any
+  firebase_messaging: any
+
+  # Maps & Location
+  flutter_map: any
+  latlong2: any
+  geolocator: any
+  geocoding: any
+
+  # State Management
+  provider: any
+
+  # UI / UX
+  google_fonts: any
+  cached_network_image: any
+  shimmer: any
+  flutter_rating_bar: any
+  lottie: any
+  flutter_animate: any
+  image_picker: any
+  video_player: any
+  permission_handler: any
+  intl: any
+  uuid: any
+  timeago: any
+  flutter_staggered_animations: any
+  share_plus: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: any
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/translations/
+    - assets/images/
+    - assets/animations/

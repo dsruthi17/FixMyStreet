@@ -1,0 +1,192 @@
+﻿Compiling lib\main.dart for the Web...                          
+D:\CSP\flutter\bin\flutter.bat : 
+Wasm dry run succeeded. Consider 
+building and testing your 
+application with the `--wasm` 
+flag. See docs for more info: http
+s://docs.flutter.dev/platform-inte
+gration/web/wasm
+At line:1 char:1
++ D:\CSP\flutter\bin\flutter.bat 
+build web --no-tree-shake-icons 
+2>&1 | ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+    + CategoryInfo          : Not 
+   Specified: (Wasm dry run su..  
+  .ration/web/wasm:String) [],    
+ RemoteException
+    + FullyQualifiedErrorId : Nat 
+   iveCommandError
+ 
+Use --no-wasm-dry-run to disable 
+these warnings.
+Target dart2js failed: 
+ProcessException: Process exited 
+abnormally with exit code 1:
+lib/screens/auth/login_screen.dart
+:300:11:
+Error: No named parameter with 
+the name 'isPassword'.
+          isPassword: true,
+          ^^^^^^^^^^
+lib/widgets/custom_text_field.dart
+:17:9:
+Info: Found this candidate, but 
+the arguments don't match.
+  const CustomTextField({
+        ^^^^^^^^^^^^^^^
+lib/screens/auth/register_screen.d
+art:108:29:
+Error: No named parameter with 
+the name 'isPassword'.
+                            
+isPassword: true,
+                            
+^^^^^^^^^^
+lib/widgets/custom_text_field.dart
+:17:9:
+Info: Found this candidate, but 
+the arguments don't match.
+  const CustomTextField({
+        ^^^^^^^^^^^^^^^
+lib/screens/auth/register_screen.d
+art:141:31:
+Error: No named parameter with 
+the name 'isPassword'.
+                              
+isPassword: true,
+                              
+^^^^^^^^^^
+lib/widgets/custom_text_field.dart
+:17:9:
+Info: Found this candidate, but 
+the arguments don't match.
+  const CustomTextField({
+        ^^^^^^^^^^^^^^^
+Error: Compilation failed.
+  Command: D:\CSP\flutter\bin\cach
+e\dart-sdk\bin\dart.exe compile 
+js --platform-binaries=D:\CSP\flut
+ter\bin\cache\flutter_web_sdk\kern
+el --invoker=flutter_tool 
+-Ddart.vm.product=true 
+-DFLUTTER_VERSION=3.41.1 
+-DFLUTTER_CHANNEL=stable -DFLUTTER
+_GIT_URL=https://github.com/flutte
+r/flutter.git -DFLUTTER_FRAMEWORK_
+REVISION=582a0e7c55 -DFLUTTER_ENGI
+NE_REVISION=3452d735bd 
+-DFLUTTER_DART_VERSION=3.11.0 
+-DFLUTTER_WEB_USE_SKIA=true 
+-DFLUTTER_WEB_USE_SKWASM=false -DF
+LUTTER_WEB_CANVASKIT_URL=https://w
+ww.gstatic.com/flutter-canvaskit/3
+452d735bd38224ef2db85ca763d862d632
+6b17f/ --native-null-assertions 
+--no-source-maps -O4 --minify -o D
+:\CSP\FixMyStreet_v1\.dart_tool\fl
+utter_build\d9ac9788a8ea3ef4d00432
+b765d12609\app.dill --packages=D:\
+CSP\FixMyStreet_v1\.dart_tool\pack
+age_config.json --cfe-only D:\CSP\
+FixMyStreet_v1\.dart_tool\flutter_
+build\d9ac9788a8ea3ef4d00432b765d1
+2609\main.dart
+#0      RunResult.throwException (
+package:flutter_tools/src/base/pro
+cess.dart:153:5)
+#1      _DefaultProcessUtils.run (
+package:flutter_tools/src/base/pro
+cess.dart:379:19)
+<asynchronous suspension>
+#2      Dart2JSTarget.build (packa
+ge:flutter_tools/src/build_system/
+targets/web.dart:208:5)
+<asynchronous suspension>
+#3      
+_BuildInstance._invokeInternal (pa
+ckage:flutter_tools/src/build_syst
+em/build_system.dart:937:9)
+<asynchronous suspension>
+#4      Future.wait.<anonymous 
+closure> 
+(dart:async/future.dart:546:21)
+<asynchronous suspension>
+#5      
+_BuildInstance.invokeTarget (packa
+ge:flutter_tools/src/build_system/
+build_system.dart:875:32)
+<asynchronous suspension>
+#6      Future.wait.<anonymous 
+closure> 
+(dart:async/future.dart:546:21)
+<asynchronous suspension>
+#7      
+_BuildInstance.invokeTarget (packa
+ge:flutter_tools/src/build_system/
+build_system.dart:875:32)
+<asynchronous suspension>
+#8      FlutterBuildSystem.build (
+package:flutter_tools/src/build_sy
+stem/build_system.dart:684:16)
+<asynchronous suspension>
+#9      WebBuilder.buildWeb (packa
+ge:flutter_tools/src/web/compile.d
+art:101:34)
+<asynchronous suspension>
+#10     
+BuildWebCommand.runCommand (packag
+e:flutter_tools/src/commands/build
+_web.dart:299:5)
+<asynchronous suspension>
+#11     
+FlutterCommand.run.<anonymous 
+closure> (package:flutter_tools/sr
+c/runner/flutter_command.dart:1590
+:27)
+<asynchronous suspension>
+#12     AppContext.run.<anonymous 
+closure> (package:flutter_tools/sr
+c/base/context.dart:154:19)
+<asynchronous suspension>
+#13     CommandRunner.runCommand (
+package:args/command_runner.dart:2
+12:13)
+<asynchronous suspension>
+#14     FlutterCommandRunner.runCo
+mmand.<anonymous closure> (package
+:flutter_tools/src/runner/flutter_
+command_runner.dart:496:9)
+<asynchronous suspension>
+#15     AppContext.run.<anonymous 
+closure> (package:flutter_tools/sr
+c/base/context.dart:154:19)
+<asynchronous suspension>
+#16     
+FlutterCommandRunner.runCommand (p
+ackage:flutter_tools/src/runner/fl
+utter_command_runner.dart:431:5)
+<asynchronous suspension>
+#17     FlutterCommandRunner.run.<
+anonymous closure> (package:flutte
+r_tools/src/runner/flutter_command
+_runner.dart:307:33)
+<asynchronous suspension>
+#18     run.<anonymous 
+closure>.<anonymous closure> (pack
+age:flutter_tools/runner.dart:104:
+11)
+<asynchronous suspension>
+#19     AppContext.run.<anonymous 
+closure> (package:flutter_tools/sr
+c/base/context.dart:154:19)
+<asynchronous suspension>
+#20     main (package:flutter_tool
+s/executable.dart:103:3)
+<asynchronous suspension>
+
+Compiling lib\main.dart for the Web...                             50.7s
+Error: Failed to compile 
+application for the Web.
